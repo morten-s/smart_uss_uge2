@@ -1,0 +1,73 @@
+﻿@model IEnumerable<smart_uss_uge2.Models.Covid19>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<p>
+    <div style="margin:10px;"><a asp-action="Create">Opret ny borgertest</a></div>
+    <div style="margin:10px;"><a asp-action="Soeg">Søg efter borgertest</a></div>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adresse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.By)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Postnummer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestTaget)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErPositiv)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpr)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adresse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.By)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Postnummer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TestTaget)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ErPositiv)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

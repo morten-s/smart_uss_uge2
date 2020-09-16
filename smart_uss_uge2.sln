@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smart_uss_uge2", "smart_uss_uge2\smart_uss_uge2.csproj", "{B3E55E27-3D08-4F91-BEC1-98DA5D86DF90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3E55E27-3D08-4F91-BEC1-98DA5D86DF90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E55E27-3D08-4F91-BEC1-98DA5D86DF90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E55E27-3D08-4F91-BEC1-98DA5D86DF90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E55E27-3D08-4F91-BEC1-98DA5D86DF90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {274A776F-DE16-496C-8521-2B8746714552}
+	EndGlobalSection
+EndGlobal
