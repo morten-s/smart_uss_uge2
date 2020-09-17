@@ -62,6 +62,7 @@ namespace smart_uss_uge2.Controllers
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         [ActionName("Create")]
         [ValidateAntiForgeryToken]
@@ -78,6 +79,7 @@ namespace smart_uss_uge2.Controllers
             return View(item);
         }
 
+        [Authorize]
         [HttpPost]
         [ActionName("Edit")]
         [ValidateAntiForgeryToken]
@@ -92,6 +94,7 @@ namespace smart_uss_uge2.Controllers
             return View(item);
         }
 
+        [Authorize]
         [ActionName("Edit")]
         public async Task<ActionResult> EditAsync(string id)
         {
@@ -109,6 +112,7 @@ namespace smart_uss_uge2.Controllers
             return View(item);
         }
 
+        [Authorize]
         [ActionName("Delete")]
         public async Task<ActionResult> DeleteAsync(string id)
         {
@@ -126,6 +130,7 @@ namespace smart_uss_uge2.Controllers
             return View(item);
         }
 
+        [Authorize]
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]

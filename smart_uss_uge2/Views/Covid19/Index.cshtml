@@ -29,6 +29,9 @@
                 @Html.DisplayNameFor(model => model.Postnummer)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Telefonnummer)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.TestTaget)
             </th>
             <th>
@@ -40,34 +43,37 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+        <tr>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Cpr)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Adresse)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.By)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Postnummer)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TestTaget)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ErPositiv)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </td>
-            </tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cpr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adresse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.By)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Postnummer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefonnummer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestTaget)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ErPositiv)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
         }
     </tbody>
 </table>

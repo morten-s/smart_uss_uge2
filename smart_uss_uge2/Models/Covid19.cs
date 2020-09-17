@@ -11,7 +11,7 @@ namespace smart_uss_uge2.Models
 {
     public class Covid19
     {
-        [HiddenInput(DisplayValue = false)]
+        //[HiddenInput(DisplayValue = false)]
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }
 
